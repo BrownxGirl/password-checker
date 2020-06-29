@@ -7,7 +7,7 @@ function passwordIsValid(password) {
   if (password == "") {
     throw "password should exist";
   }
-  if (password.length < 8) {
+  if (password.length < 8) { // checks length from 9 upwards
     throw "password should be longer than 8 characters";
   }
   if (!password.match(lowerCaseLetters)) {
