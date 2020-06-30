@@ -7,7 +7,7 @@ describe("The functions should return a password that follows the bellow conditi
     }).toThrow("password should exist");
   }); 
 
-  it("Should throw an error if it is 8 or less characters", function () {
+  it("Should throw an error if password has 8 or less characters", function () {
     expect(() => {
       passwordIsValid("sfaefgv");
     }).toThrow("password should be longer than 8 characters");
